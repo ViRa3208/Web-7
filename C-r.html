@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Подключение Bootstrap 5.1.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <!-- Подключение Bootstrap 5.1.3 -->
+    <link rel="stylesheet" href="C-r.css">
+    <title>Калькулятор </title>
+</head>
+<body>
+<div id="main" class="d-flex flex-nowrap flex-column bd-highlight ">
+    <header id="header" class="order-first">
+        <div class="row text-center">
+            <div class="container col-8 col-sm-6">
+                <h1>Калькулятор</h1>
+            </div>
+        </div>
+    </header>
+    <div id="navi" class="text-center">
+        <nav class="d-inline-flex justify-content-center flex-column flex-sm-row">
+            <a class="d-inline nav-link" href="index.html"><h5>Главная</h5></a>
+            <a class="d-inline nav-link-active" href="C-r.html">Калькулятор</a>
+        </nav>
+    </div>
+    <div id="с1" class="text-center">
+        <div class="row justify-content-center">
+            <div class="container col-10 col-sm-12 m-2 p-2">
+                <h3>Калькулятор</h3>
+                <input type="text" id="type" class="m-1" placeholder="Укажите стоимость"> *
+                <input type="text" id="count" class="m-1" placeholder="Укажите количество"> =
+                <button id="but1" class="m-1">Рассчитать</button>
+                <div id="sum"></div>
+            </div>
+        </div>
+    </div>
+    <div id="с2" class="text-center">
+        <div class="row justify-content-center">
+            <div class="container col-10 col-sm-12">
+                <h3>Калькулятор стоимости продукта</h3>
+                <select id="typ" class="m-1">
+                    <option value="1">Бананы</option>
+                    <option value="2">Яблоки</option>
+                    <option value="3">Груши</option>
+                </select> *
+                <input type="text" id="county" class="m-1" placeholder="Укажите количество продукта">
+            </div>
+            <div class="container col-10 col-sm-12">
+                <div id="radio" hidden="true" class="btn-group btn-group-toggle m-2 p-2" data-toggle="buttons">
+                    <input id="r1" type="radio" name="radio" class="m-1" value="1" checked> Грузинские
+                    <input id="r2" type="radio" name="radio" class="m-1" value="2"> Индийские
+                </div>
+                <br>
+                <div id="checkbox" hidden="true" class="btn-group btn-group-toggle m-2 p-2" data-toggle="buttons">
+                    <input id="chk1" type="checkbox" name="checkbox" class="m-1" value="1"> Доставка в ящиках
+                    <input id="chk2" type="checkbox" name="checkbox" class="m-1" value="2"> Защитная пленка
+                </div>
+                <div id="produce"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+ <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script defer src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="Ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap 5.1.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5.1.3 -->
+     <!-- jQuery -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <!-- jQuery -->
+     <script defer src="slick/slick.min.js"></script>
+    <title>Web-7</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/564x/b9/2c/df/b92cdf5a39000c5f64d6178f40efd228.jpg"/>
+</head>
+<body class="d-flex flex-nowrap flex-column bd-highlight">
+<div class="header order-first">
+    <header>
+        <div class="row">
+            <div class="container col-8 col-sm-6">
+                <h1><img src="https://i.pinimg.com/564x/b9/2c/df/b92cdf5a39000c5f64d6178f40efd228.jpg" alt="" width="80px" height="80px">Web-7</h1>
+            </div>
+        </div>
+    </header>
+    <div id="navi" class="order-2 text-center m-1">
+        <nav class="d-inline-flex justify-content-center flex-column flex-sm-row">
+            <a class="d-inline nav-link-active" href="/index.html"><h5>Главная</h5></a>
+            <a class="d-inline nav-link" href="C-r.html">Калькулятор </a>
+            <a class="d-inline nav-link" href="#links">Список ссылок</a>
+            <a class="d-inline nav-link" href="#tab">Таблица</a>
+            <a class="d-inline nav-link" href="#formula">Форма</a>
+        </nav>
+    </div>
+    <div id="links" class="order-3">
+        <div class="row">
+            <div class="container col-8 col-sm-6 ">
+                <h2 class="undershape">Список гиперссылок</h2>
+                <ol>
+                    <li><a href="https://ria.ru/"> абсолютная гиперссылкана главную страницу сайта</a></li>
+                    <li><a href="https://ria.ru/"> абсолютная на главную сайта в протоколе https </a>
+                    <li><a href="ftp://laba.com/text.zip"> ссылка на файл на сервере FTP без авторизации</a>
+                    <li><a href="ftp://lg:pr@laba.com/text.zip"> ссылка на файл на сервере FTP c авторизацией </a>
+                    <li><a href="https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D0%BD%D1%84%D0%BB%D0%B8%D0%BA%D1%82"> ссылка на фрагмент страницы некоторого сайта </a>
+                    <li><a href="#top">  ссылка на фрагмент текущей страницы</a></li>
+                    <li> <a href="https://www.yandex.ru/search?a=youtube&b=youtube">ссылка с двумя параметрами в URL</a> </li>
+                    <li>Навигация по странице сайта
+                    <ul>
+                    <li><a href="https://ria.ru/" title="Заглавная страница">Заглавная страница</a></li>
+                    <li><a href="https://ria.ru/politics/"title="Политика" >Политика</a></li>
+                    <li><a href="https://ria.ru/world/" title="В мире">В мире</a></li>
+                    <li><a href="https://ria.ru/economy/" title="Экономика">Экономика</a></li>
+                    <li><a href="https://ria.ru/society/" title="Форум">Форум</a></li>
+                    <li><a href="https://ria.ru/incidents/" title="Проишествия">Проишествия</a></li>
+                    <li><a href="https://ria.ru/defense_safety/" title="Армия">Армия</a></li>
+                    <li><a href="https://ria.ru/science/" title="Наука">Наука</a></li>
+                    <li><a href="https://ria.ru/culture/" title="Культура">Культура</a></li>
+                    <li><a href="https://rsport.ria.ru/" title="Спорт">Спорт</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="https://www.pinterest.ru/" rel="nofollow"> ссылка по которой запрещен переход поисковикам</a>
+                    <li> <noindex><a href="https://www.pinterest.ru/" rel="nofollow">Ссылка запрещенная для индексации поисковиками</a></noindex> </li>
+                    <li><a title="href отсутствует">Ссылка без href</a></li>
+                    <li><a href="" title="Пустой href">Ссылка с пустым href</a></li>
+                    <li><a href="https://i.pinimg.com/564x/5f/60/37/5f6037ac66542b588c4f76abe5c0f62f.jpg"><img src="https://i.pinimg.com/564x/3a/0d/18/3a0d18e15da7f6fd58131e89c41ff9b7.jpg" alt="" title="ссылка-изображение"></a></li>
+                    <li><img src="https://i.pinimg.com/564x/dd/72/62/dd726201a3fe0d0a986e091fec43c4c8.jpg" usemap="#footbol">
+                    <map name="metals">
+                     <area shape="rect" coords="8,15,103,75"
+                      href="https://ru.wikipedia.org/wiki/%D0%A4%D1%83%D1%82%D0%B1%D0%BE%D0%BB"
+                      alt="" target="_blank">
+                    </map>
+                    </map></li>
+                    <li> <p>Прохоровская трагедия советских <a href="https://topwar.ru/144253-prohorovskaya-tragediya-sovetskih-tankistov.html">танкистов</p> </li>
+                    <li><a href="https://htmlacademy.ru/blog/frontend/html/index.html">в текущем каталоге</a></li>
+                    <li><a href=".../about/text.html">в каталоге about</a></li>
+                    <li><a href=".../text.html">в каталоге на 1 уровень выше</a></li>
+                    <li><a href=".../.../example.html">на 2 уровня выше</a></li>
+                    <li><a href="/"> Сокращенная ссылка на главную </a></li>
+                    <li><a href=".../input">Сокращенная ссылка на внутреннюю </a></li>
+                    </ol>
+            </div>
+        </div>
+    </div>
+    <div id="tab" class="order-5 order-sm-4">
+        <div class="row">
+            <div class="container d-flex justify-content-center col-8 col-sm-6 p-1">
+                <table class="tab1">
+                    <tr>
+                        <td rowspan="2">Название машины</td>
+                        <td colspan="3">Характеристика машины</td>
+                    </tr>
+                    <tr>
+                        <td>Мощность</td>
+                        <td>Разгон до 100км/ч</td>
+                    </tr>
+                    <tr style="background-color: yellow; color:black;">
+                        <td>Subaru WRX STI</td>
+                        <td>300л/с</td>
+                        <td>13.1</td>
+                    </tr>
+                    <tr>
+                        <td>ALFA ROMEO 4C</td>
+                        <td>240л/с</td>
+                        <td>12.8</td>
+                    </tr>
+                    <tr style="background-color: green ; color:black;">
+                        <td>BMW M4</td>
+                        <td>431л/с</td>
+                        <td>12.2</td>
+                    </tr>
+                    <tr>
+                        <td>JAGUAR F-TYPE R COUPE</td>
+                        <td>550л/с</td>
+                        <td>11,8</td>
+                    </tr>
+                    <tr style="background-color: pink; color:black;">
+                        <td>PORSCHE 911</td>
+                        <td>560л/с</td>
+                        <td>10,9</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="formula" class="order-4 order-sm-5 m-1">
+        <div class="row">
+            <div class="container col-8 col-sm-6 text-center">
+                <h2 id="form" class="undershape">Форма</h2>
+                <form>
+                    <label>
+                        Имя:<br>
+                        <input type="text" name="username" value="">
+                    </label>
+                </form>
+                <form>
+                    <label>
+                        E-mail:<br>
+                        <input type="email" name="email" value="">
+                    </label>
+                </form>
+                <form>
+                    <label>
+                        Дата рождения:<br>
+                        <input type="date" name="birthday" value="">
+                    </label>
+                </form>
+                <form>
+                    <br>Пол:
+                    <label>
+                        <input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+                        женский
+                    </label>
+                    <label>
+                        <input type="radio" name="radio-group-1" value="Значение2">
+                        мужской
+                    </label>
+                </form>
+                <form>
+                    <br>Количество конечностей:<br>
+                    <label>
+                        <input type="radio" checked="checked" name="radio-group-1" value="Значение0">
+                        0
+                    </label>
+                    <label>
+                        <input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+                        1
+                    </label>
+                    <label>
+                        <input type="radio" checked="checked" name="radio-group-1" value="Значение2">
+                        2
+                    </label>
+                    <label>
+                        <input type="radio" checked="checked" name="radio-group-1" value="Значение3">
+                        3
+                    </label>
+                    <label>
+                        <input type="radio" checked="checked" name="radio-group-1" value="Значение4">
+                        4
+                    </label>
+                </form>
+                <form>
+                    <p>
+                        Сверхспособности:<br>
+                        <label>
+                            <select name="field-name-3" multiple="multiple">
+                                <option value="Значение1" selected="selected">Бессмертие</option>
+                                <option value="Значение2">Прохождение сквозь стены</option>
+                                <option value="Значение3">Левитация</option>
+                            </select>
+                        </label>
+                    </p>
+                </form>
+                <form>
+                    Биография: <br>
+                    <label>
+                        <textarea autofocus></textarea>
+                    </label>
+                </form>
+                <br>
+                <label>
+                    <input type="checkbox"> с контрактом ознакомлен (а) <br>
+                    <button>«Отправить»</button>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="slider" class="order-5 text-center">
+        <div class="">
+            <div class="d-inline-flex justify-content-center col-10 col-lg-8 m-1">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="https://i.pinimg.com/originals/6b/de/83/6bde838b88e44eb69bfd31ecbcfaefe2.jpg" alt="Слайд 1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://i.pinimg.com/564x/d7/30/b8/d730b831c2cd454308774f7759756c76.jpg" alt="Слайд 2">
+                    </div>
+                    <div class="slide">
+                        <img src="https://cdn.discordapp.com/attachments/887655696617832467/917471577732431922/NJDENbrnHEw.png" alt="Слайд 3">
+                    </div>
+                    <div class="slide">
+                        <img src="https://i.pinimg.com/564x/2f/eb/6a/2feb6aa8f20aafb87b09a0ab830b3a39.jpg" alt="Слайд 4">
+                    </div>
+                    <div class="slide">
+                        <img src="https://tiermaker.com/images/templates/friends--819273/8192731612979951.png" alt="Слайд 5">
+                    </div>
+                    <div class="slide">
+                        <img src="https://anivisual.net/avatar/00/89/45698606.png" alt="Слайд 6">
+                    </div>
+                    <div class="slide">
+                        <img src="https://i.pinimg.com/564x/43/7d/3b/437d3b7b514cfee40706c80cfd333ee4.jpg" alt="Слайд 7">
+                    </div>
+                    <div class="slide">
+                        <img src="https://i1.sndcdn.com/avatars-000194286190-0dqtqk-t500x500.jpg" alt="Слайд 8">
+                    </div>
+                    <div class="slide">
+                        <img src="https://pbs.twimg.com/profile_images/1080636127743262721/742F8XiV.jpg" alt="Слайд 9">
+                    </div>
+                    <div class="slide">
+                        <img src="https://i1.sndcdn.com/artworks-000281197730-av128x-t500x500.jpg" alt="Слайд 10">
+                    </div>
+                    <div class="slide">
+                        <img src="https://pbs.twimg.com/profile_images/1364375285/________________.jpg" alt="Слайд 11">
+                    </div>
+                    <div class="slide">
+                        <img src="https://anivisual.net/avatar/01/04/26058109.jpg" alt="Слайд 12">
+                    </div>
+                    <div class="slide">
+                        <img src="https://i.pinimg.com/564x/93/45/89/934589f3aa2f266b260de8bfeb3ae1ab.jpg" alt="Слайд 13">
+                    </div>
+                    <div class="slide">
+                        <img src="https://i.pinimg.com/564x/f0/ec/d8/f0ecd8dae675e66b1ec7883d69cf70ca.jpg" alt="Слайд 14">
+                    </div>
+                    <div class="slide">
+                        <img src="https://sun1-20.userapi.com/s/v1/ig2/j371FKjL9-pX1fAsW4c8cgTXD3S1xhx7OWANvJZgVv4TEYmSiUeAOVxA_2cd5SO0bXX-sonmQNfwt53rltZ6Oh3H.jpg?size=400x400&quality=96&crop=16,0,828,828&ava=1" alt="Слайд 15">
+                    </div>
+                    <div class="slide">
+                        <img src="https://yt3.ggpht.com/zgIXXOCf6RJMGmybO3Gwv3h4AXvJR9-50nHnxfjpfNA-B-EYnfkIA1qq7UwDF7ZYAoXJds4a=s900-c-k-c0x00ffffff-no-rj" alt="Слайд 16">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="order-last p-2">
+        <div class="conteiner">
+            <div class="row text-center">
+                <h5>(с) Некретов Кирилл 2021</h5>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script defer src="slider.js"></script>
+</div>
+
+</body>
+
+</html>
